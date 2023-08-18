@@ -16,7 +16,7 @@ namespace AstroMathTests
         [Theory]
         [InlineData(500.1, 500.0, 6000)]
         [InlineData(500.0, 500.0, 0)]
-        [InlineData(500.0, 0, 0)]
+        [InlineData(500.0, 0, 0)] // Test case: DivideByZero
         public void StarVelocity_ShouldCalculate(double x, double y, double expected)
         {
             // Arrange
